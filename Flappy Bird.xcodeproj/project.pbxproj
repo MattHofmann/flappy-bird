@@ -15,6 +15,11 @@
 		B4FF21E51D764FEA005C16B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4FF21E31D764FEA005C16B8 /* Main.storyboard */; };
 		B4FF21E71D764FEA005C16B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4FF21E61D764FEA005C16B8 /* Assets.xcassets */; };
 		B4FF21EA1D764FEA005C16B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4FF21E81D764FEA005C16B8 /* LaunchScreen.storyboard */; };
+		B4FF21F61D7651E1005C16B8 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B4FF21F11D7651E0005C16B8 /* bg.png */; };
+		B4FF21F71D7651E1005C16B8 /* flappy1.png in Resources */ = {isa = PBXBuildFile; fileRef = B4FF21F21D7651E1005C16B8 /* flappy1.png */; };
+		B4FF21F81D7651E1005C16B8 /* flappy2.png in Resources */ = {isa = PBXBuildFile; fileRef = B4FF21F31D7651E1005C16B8 /* flappy2.png */; };
+		B4FF21F91D7651E1005C16B8 /* pipe1.png in Resources */ = {isa = PBXBuildFile; fileRef = B4FF21F41D7651E1005C16B8 /* pipe1.png */; };
+		B4FF21FA1D7651E1005C16B8 /* pipe2.png in Resources */ = {isa = PBXBuildFile; fileRef = B4FF21F51D7651E1005C16B8 /* pipe2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		B4FF21E61D764FEA005C16B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4FF21E91D764FEA005C16B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4FF21EB1D764FEA005C16B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4FF21F11D7651E0005C16B8 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg.png; path = ../../../../../Downloads/img/bg.png; sourceTree = "<group>"; };
+		B4FF21F21D7651E1005C16B8 /* flappy1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flappy1.png; path = ../../../../../Downloads/img/flappy1.png; sourceTree = "<group>"; };
+		B4FF21F31D7651E1005C16B8 /* flappy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flappy2.png; path = ../../../../../Downloads/img/flappy2.png; sourceTree = "<group>"; };
+		B4FF21F41D7651E1005C16B8 /* pipe1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pipe1.png; path = ../../../../../Downloads/img/pipe1.png; sourceTree = "<group>"; };
+		B4FF21F51D7651E1005C16B8 /* pipe2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pipe2.png; path = ../../../../../Downloads/img/pipe2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +75,11 @@
 				B4FF21DD1D764FEA005C16B8 /* Actions.sks */,
 				B4FF21DF1D764FEA005C16B8 /* GameScene.swift */,
 				B4FF21E11D764FEA005C16B8 /* GameViewController.swift */,
+				B4FF21F11D7651E0005C16B8 /* bg.png */,
+				B4FF21F21D7651E1005C16B8 /* flappy1.png */,
+				B4FF21F31D7651E1005C16B8 /* flappy2.png */,
+				B4FF21F41D7651E1005C16B8 /* pipe1.png */,
+				B4FF21F51D7651E1005C16B8 /* pipe2.png */,
 				B4FF21E31D764FEA005C16B8 /* Main.storyboard */,
 				B4FF21E61D764FEA005C16B8 /* Assets.xcassets */,
 				B4FF21E81D764FEA005C16B8 /* LaunchScreen.storyboard */,
@@ -135,7 +150,12 @@
 			files = (
 				B4FF21E51D764FEA005C16B8 /* Main.storyboard in Resources */,
 				B4FF21DC1D764FEA005C16B8 /* GameScene.sks in Resources */,
+				B4FF21F61D7651E1005C16B8 /* bg.png in Resources */,
 				B4FF21E71D764FEA005C16B8 /* Assets.xcassets in Resources */,
+				B4FF21FA1D7651E1005C16B8 /* pipe2.png in Resources */,
+				B4FF21F81D7651E1005C16B8 /* flappy2.png in Resources */,
+				B4FF21F91D7651E1005C16B8 /* pipe1.png in Resources */,
+				B4FF21F71D7651E1005C16B8 /* flappy1.png in Resources */,
 				B4FF21EA1D764FEA005C16B8 /* LaunchScreen.storyboard in Resources */,
 				B4FF21DE1D764FEA005C16B8 /* Actions.sks in Resources */,
 			);
