@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B451226B1D76A50300B38780 /* prstart.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B451226A1D76A50300B38780 /* prstart.ttf */; };
+		B451226E1D76D4A600B38780 /* 04B_19__.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B451226D1D76D4A600B38780 /* 04B_19__.TTF */; };
+		B45122741D76E6AC00B38780 /* restartBTN.png in Resources */ = {isa = PBXBuildFile; fileRef = B45122731D76E6AC00B38780 /* restartBTN.png */; };
 		B4FF21DA1D764FEA005C16B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FF21D91D764FEA005C16B8 /* AppDelegate.swift */; };
 		B4FF21DC1D764FEA005C16B8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B4FF21DB1D764FEA005C16B8 /* GameScene.sks */; };
 		B4FF21DE1D764FEA005C16B8 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = B4FF21DD1D764FEA005C16B8 /* Actions.sks */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B451226A1D76A50300B38780 /* prstart.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = prstart.ttf; path = ../prstart.ttf; sourceTree = "<group>"; };
+		B451226D1D76D4A600B38780 /* 04B_19__.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = 04B_19__.TTF; path = ../04B_19__.TTF; sourceTree = "<group>"; };
+		B45122731D76E6AC00B38780 /* restartBTN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = restartBTN.png; path = ../restartBTN.png; sourceTree = "<group>"; };
 		B4FF21D61D764FEA005C16B8 /* Flappy Bird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flappy Bird.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4FF21D91D764FEA005C16B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4FF21DB1D764FEA005C16B8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -51,6 +57,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B451226C1D76A51300B38780 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				B451226D1D76D4A600B38780 /* 04B_19__.TTF */,
+				B451226A1D76A50300B38780 /* prstart.ttf */,
+				B4FF21F11D7651E0005C16B8 /* bg.png */,
+				B4FF21F21D7651E1005C16B8 /* flappy1.png */,
+				B45122731D76E6AC00B38780 /* restartBTN.png */,
+				B4FF21F31D7651E1005C16B8 /* flappy2.png */,
+				B4FF21F41D7651E1005C16B8 /* pipe1.png */,
+				B4FF21F51D7651E1005C16B8 /* pipe2.png */,
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
 		B4FF21CD1D764FEA005C16B8 = {
 			isa = PBXGroup;
 			children = (
@@ -75,11 +96,7 @@
 				B4FF21DD1D764FEA005C16B8 /* Actions.sks */,
 				B4FF21DF1D764FEA005C16B8 /* GameScene.swift */,
 				B4FF21E11D764FEA005C16B8 /* GameViewController.swift */,
-				B4FF21F11D7651E0005C16B8 /* bg.png */,
-				B4FF21F21D7651E1005C16B8 /* flappy1.png */,
-				B4FF21F31D7651E1005C16B8 /* flappy2.png */,
-				B4FF21F41D7651E1005C16B8 /* pipe1.png */,
-				B4FF21F51D7651E1005C16B8 /* pipe2.png */,
+				B451226C1D76A51300B38780 /* Ressources */,
 				B4FF21E31D764FEA005C16B8 /* Main.storyboard */,
 				B4FF21E61D764FEA005C16B8 /* Assets.xcassets */,
 				B4FF21E81D764FEA005C16B8 /* LaunchScreen.storyboard */,
@@ -148,8 +165,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B451226B1D76A50300B38780 /* prstart.ttf in Resources */,
+				B451226E1D76D4A600B38780 /* 04B_19__.TTF in Resources */,
 				B4FF21E51D764FEA005C16B8 /* Main.storyboard in Resources */,
 				B4FF21DC1D764FEA005C16B8 /* GameScene.sks in Resources */,
+				B45122741D76E6AC00B38780 /* restartBTN.png in Resources */,
 				B4FF21F61D7651E1005C16B8 /* bg.png in Resources */,
 				B4FF21E71D764FEA005C16B8 /* Assets.xcassets in Resources */,
 				B4FF21FA1D7651E1005C16B8 /* pipe2.png in Resources */,
@@ -334,6 +354,7 @@
 				B4FF21F01D764FEA005C16B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

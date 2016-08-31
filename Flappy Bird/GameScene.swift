@@ -14,10 +14,21 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var bird = SKSpriteNode()
     var bg = SKSpriteNode()
     
+    
+    // UI
+    
     var scoreLabel = SKLabelNode()
     var score = 0
     
     var gameOverLabel = SKLabelNode()
+    var gameOverMsg1 = SKLabelNode()
+    var gameOverMsg2 = SKLabelNode()
+
+    
+    var restartBTN = SKSpriteNode()
+    
+    
+    // Timer
     
     var timer = Timer()
     
@@ -104,43 +115,35 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         if gameOver == false {
         
-        if contact.bodyA.categoryBitMask == ColliderType.Gap.rawValue || contact.bodyB.categoryBitMask == ColliderType.Gap.rawValue {
-            score += 1
-            scoreLabel.text = String(score)
-        } else {
-            // GameOver
-            // set gameSpeed to 0
-            self.speed = 0
-            gameOver = true
-            //Stop timer
-            timer.invalidate()
+            if contact.bodyA.categoryBitMask == ColliderType.Gap.rawValue || contact.bodyB.categoryBitMask == ColliderType.Gap.rawValue {
+                score += 1
+                scoreLabel.text = String(score)
+            } else {
+                // GameOver
+                // set gameSpeed to 0
+                self.speed = 0
+                gameOver = true
+                //Stop timer
+                timer.invalidate()
             
-            gameOverLabel.fontName = "Helvetica"
-            gameOverLabel.fontSize = 30
-            gameOverLabel.text = "Game Over! Tap to play again."
-            gameOverLabel.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
+                createRestartBTN()
             
-            self.addChild(gameOverLabel)
-        }
+            }
         }
 
     }
     
-    // like viewDidload
+    // MARK: like viewDidload
     override func didMove(to view: SKView) {
         
         // set contactDelegate
         self.physicsWorld.contactDelegate = self
         
         setupGame()
-        }
+    }
     
-    func setupGame() {
-        
-        // Timer
-        timer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(self.makePipes), userInfo: nil, repeats: true)
-        
-        // Background
+    // Background
+    func createBackground() {
         
         // create background texture
         let bgTexture = SKTexture(imageNamed: "bg.png")
@@ -164,6 +167,69 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             
             i += 1
         }
+    
+    }
+    
+    // restartBTN
+    func createRestartBTN() {
+        
+        print("restartMenu called")
+        
+        gameOverLabel.fontName = "04b_19"
+        gameOverLabel.fontSize = 100
+        gameOverLabel.text = "Game Over!"
+        gameOverLabel.position = CGPoint(x: self.frame.midX, y: self.frame.midY + 200)
+        self.addChild(gameOverLabel)
+        
+        
+        gameOverMsg1.fontName = "04b_19"
+        gameOverMsg1.fontSize = 40
+        gameOverMsg1.text = "Press"
+        gameOverMsg1.fontColor = UIColor.black
+        gameOverMsg1.position = CGPoint(x: self.frame.midX, y: self.frame.midY + 100)
+        self.addChild(gameOverMsg1)
+        
+        gameOverMsg2.fontName = "04b_19"
+        gameOverMsg2.fontSize = 40
+        gameOverMsg2.text = "to play again."
+        gameOverMsg2.fontColor = UIColor.black
+        gameOverMsg2.position = CGPoint(x: self.frame.midX, y: self.frame.midY - 150)
+        self.addChild(gameOverMsg2)
+        
+        restartBTN = SKSpriteNode(imageNamed: "restartBTN")
+        // restartBTN.size = CGSizeMake(200, 100)
+        restartBTN.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
+        restartBTN.zPosition = 6
+        // restartBTN.setScale(0)
+        self.addChild(restartBTN)
+        
+        // restartBTN.run(SKAction.scale(to: 1.0, duration: 0.3))
+    }
+    
+    
+    func restartScene() {
+        // remove all objects
+        self.removeAllChildren()
+        // no more actions (eg. pipes)
+        self.removeAllActions()
+        // end game
+        gameOver = false
+        // reset score
+        score = 0
+        //
+        self.speed = 1
+        // set up game again
+        setupGame()
+    }
+    
+    
+    func setupGame() {
+        
+        // Timer
+        timer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(self.makePipes), userInfo: nil, repeats: true)
+        
+        // Background
+        createBackground()
         
         // Bird
         
@@ -207,17 +273,19 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         self.addChild(ground)
         
-        scoreLabel.fontName = "Joystix"
-        scoreLabel.fontSize = 60
+        scoreLabel.fontName = "04b_19"
+        scoreLabel.fontSize = 100
         scoreLabel.text = "0"
-        scoreLabel.position = CGPoint(x: self.frame.midX, y: self.frame.height/2 - 70)
+        scoreLabel.position = CGPoint(x: self.frame.midX, y: self.frame.height/2 - 140)
         self.addChild(scoreLabel)
         
     }
-    
-    
+
     // user touches the stream
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        
+        
         // disable birdmovement is game is over
         if gameOver == false {
          
@@ -228,19 +296,25 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             bird.physicsBody!.velocity = CGVector(dx:0, dy: 0)
             bird.physicsBody!.applyImpulse(CGVector(dx: 0, dy: 60))
 
-        } else {
-            gameOver = false
-            score = 0
-            self.speed = 1
+        } /*else {
+
+            restartScene()
+        }*/
+        
+        
+        for touch in touches {
+            let location = touch.location(in: self)
             
-            // remove all
-            self.removeAllChildren()
-            setupGame()
-            
+            if gameOver == true {
+                if restartBTN.contains(location) {
+                    restartScene()
+                }
+
+            }
         }
         
-        
     }
+    
     
     // called serveral times a second
     override func update(_ currentTime: TimeInterval) {
