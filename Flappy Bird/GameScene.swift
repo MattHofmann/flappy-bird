@@ -25,6 +25,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     var headerLabel = SKLabelNode()
     var playBTN = SKSpriteNode()
+    var versionImg = SKSpriteNode()
     
     var gameOverLabel = SKLabelNode()
     var gameOverMsg1 = SKLabelNode()
@@ -85,19 +86,30 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         // Background
         createBackground()
         
+        // create Bird
+        createBird()
+        
         // Set FlappyBird-Text
         headerLabel.fontName = "04b_19"
-        headerLabel.fontSize = 100
+        headerLabel.fontSize = 120
         headerLabel.text = "FlappyBird"
         headerLabel.fontColor = UIColor.white
-        headerLabel.position = CGPoint(x: self.frame.midX, y: self.frame.midY + 200)
+        headerLabel.position = CGPoint(x: self.frame.midX, y: self.frame.midY + 250)
         self.addChild(headerLabel)
+        
+        // version
+        versionImg = SKSpriteNode(imageNamed: "versionImg")
+        versionImg.position = CGPoint(x: self.frame.midX, y: self.frame.midY + 180)
+        versionImg.zPosition = 6
+        // restartBTN.setScale(0)
+        self.addChild(versionImg)
+        
         
         // Play Button
 
         playBTN = SKSpriteNode(imageNamed: "playBTN")
         // restartBTN.size = CGSizeMake(200, 100)
-        playBTN.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
+        playBTN.position = CGPoint(x: self.frame.midX, y: self.frame.midY - 200)
         playBTN.zPosition = 6
         // restartBTN.setScale(0)
         self.addChild(playBTN)
@@ -208,9 +220,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         print("restartMenu called")
         
         gameOverLabel.fontName = "04b_19"
-        gameOverLabel.fontSize = 100
+        gameOverLabel.fontSize = 120
         gameOverLabel.text = "Game Over!"
-        gameOverLabel.position = CGPoint(x: self.frame.midX, y: self.frame.midY + 200)
+        gameOverLabel.position = CGPoint(x: self.frame.midX, y: self.frame.midY + 250)
         self.addChild(gameOverLabel)
         
         gameOverMsg1.fontName = "04b_19"
@@ -401,7 +413,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         getReadyLabel.fontName = "04b_19"
         getReadyLabel.fontSize = 100
         getReadyLabel.text = "Get Ready!"
-        getReadyLabel.position = CGPoint(x: self.frame.midX, y: self.frame.midY + 200)
+        getReadyLabel.position = CGPoint(x: self.frame.midX, y: self.frame.midY + 250)
         self.addChild(getReadyLabel)
         
         
