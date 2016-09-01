@@ -111,7 +111,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         // restartBTN.size = CGSizeMake(200, 100)
         playBTN.position = CGPoint(x: self.frame.midX, y: self.frame.midY - 200)
         playBTN.zPosition = 6
-        // restartBTN.setScale(0)
+        
+        // for splashscreen generation
+        // playBTN.setScale(0)
+        // self.speed = 0
+        // ---
+        
         self.addChild(playBTN)
         
         // Update status
