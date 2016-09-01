@@ -127,6 +127,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
     }
     
+    // starts the game after "play" button is pressed
     func startGame() {
         // remove all objects
         self.removeAllChildren()
@@ -143,6 +144,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
     }
     
+    // set game after "restart" button is pressed
     func restartScene() {
         // remove all objects
         self.removeAllChildren()
@@ -173,7 +175,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
     }
     
-    // Background
+    // Background method
     func createBackground() {
         
         // create background texture
@@ -201,6 +203,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     }
     
+    // ground method
     func createGround() {
         // Add the Ground
         let ground = SKNode()
@@ -217,7 +220,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     
-    // restartBTN
+    // restart Menu
     func restartMenu() {
         
         scoreLabel.removeFromParent()
@@ -287,7 +290,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
 
-    
+    // create the flappybird
     func createBird() {
         // Bird
         
@@ -389,6 +392,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.addChild(gap)
     }
     
+    // method for the score label
     func createScoreLabel() {
         // scoreLabel
         scoreLabel.fontName = "04b_19"
@@ -398,6 +402,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.addChild(scoreLabel)
     }
     
+    
+    // method to set up the game
     func setupGame() {
         // Background
         createBackground()
@@ -424,6 +430,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
     }
 
+    // method that adds the moving pipes
     func addPipesAndTimer() {
         // Timer
         timer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(self.createPipes), userInfo: nil, repeats: true)
