@@ -9,3 +9,7 @@ Screenshots:
 ![flappy_screen_04](https://cloud.githubusercontent.com/assets/20715639/19027419/431d1756-896b-11e6-9b60-af602524b631.PNG)
 
 This App is for educational purpose only.
+
+
+Resources:
+Font "04B_19__.TTF" by "04" Yuji Oshimoto. (http://www.04.jp.org/)
