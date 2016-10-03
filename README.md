@@ -12,4 +12,4 @@ This App is for educational purpose only.
 
 
 Resources:
-Font "04B_19__.TTF" by "04" Yuji Oshimoto. (http://www.04.jp.org/)
+- Font "04B_19__.TTF" by "04" Yuji Oshimoto. (http://www.04.jp.org/)
