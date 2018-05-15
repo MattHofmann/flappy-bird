@@ -7,16 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B451226E1D76D4A600B38780 /* 04B_19__.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B451226D1D76D4A600B38780 /* 04B_19__.TTF */; };
-		B45122741D76E6AC00B38780 /* restartBTN.png in Resources */ = {isa = PBXBuildFile; fileRef = B45122731D76E6AC00B38780 /* restartBTN.png */; };
-		B45122761D76EB7500B38780 /* playBTN.png in Resources */ = {isa = PBXBuildFile; fileRef = B45122751D76EB7500B38780 /* playBTN.png */; };
-		B480F0BD1D782763002517D8 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B480F0B81D782763002517D8 /* bg.png */; };
-		B480F0BE1D782763002517D8 /* flappy1.png in Resources */ = {isa = PBXBuildFile; fileRef = B480F0B91D782763002517D8 /* flappy1.png */; };
-		B480F0BF1D782763002517D8 /* flappy2.png in Resources */ = {isa = PBXBuildFile; fileRef = B480F0BA1D782763002517D8 /* flappy2.png */; };
-		B480F0C01D782763002517D8 /* pipe1.png in Resources */ = {isa = PBXBuildFile; fileRef = B480F0BB1D782763002517D8 /* pipe1.png */; };
-		B480F0C11D782763002517D8 /* pipe2.png in Resources */ = {isa = PBXBuildFile; fileRef = B480F0BC1D782763002517D8 /* pipe2.png */; };
-		B4C296351D77B208005F800B /* tapHere.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C296341D77B208005F800B /* tapHere.png */; };
-		B4C2963D1D77B88E005F800B /* versionImg.png in Resources */ = {isa = PBXBuildFile; fileRef = B4C2963C1D77B88E005F800B /* versionImg.png */; };
+		B49F145B20AB2EB600DE2910 /* 04B_19__.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B49F145120AB2EB600DE2910 /* 04B_19__.TTF */; };
 		B4FF21DA1D764FEA005C16B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FF21D91D764FEA005C16B8 /* AppDelegate.swift */; };
 		B4FF21DC1D764FEA005C16B8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B4FF21DB1D764FEA005C16B8 /* GameScene.sks */; };
 		B4FF21DE1D764FEA005C16B8 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = B4FF21DD1D764FEA005C16B8 /* Actions.sks */; };
@@ -28,16 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B451226D1D76D4A600B38780 /* 04B_19__.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = 04B_19__.TTF; path = ../04B_19__.TTF; sourceTree = "<group>"; };
-		B45122731D76E6AC00B38780 /* restartBTN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = restartBTN.png; path = ../restartBTN.png; sourceTree = "<group>"; };
-		B45122751D76EB7500B38780 /* playBTN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = playBTN.png; path = ../playBTN.png; sourceTree = "<group>"; };
-		B480F0B81D782763002517D8 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg.png; path = ../bg.png; sourceTree = "<group>"; };
-		B480F0B91D782763002517D8 /* flappy1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flappy1.png; path = ../flappy1.png; sourceTree = "<group>"; };
-		B480F0BA1D782763002517D8 /* flappy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flappy2.png; path = ../flappy2.png; sourceTree = "<group>"; };
-		B480F0BB1D782763002517D8 /* pipe1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pipe1.png; path = ../pipe1.png; sourceTree = "<group>"; };
-		B480F0BC1D782763002517D8 /* pipe2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pipe2.png; path = ../pipe2.png; sourceTree = "<group>"; };
-		B4C296341D77B208005F800B /* tapHere.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tapHere.png; path = ../tapHere.png; sourceTree = "<group>"; };
-		B4C2963C1D77B88E005F800B /* versionImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = versionImg.png; path = ../versionImg.png; sourceTree = "<group>"; };
+		B49F145120AB2EB600DE2910 /* 04B_19__.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = 04B_19__.TTF; sourceTree = "<group>"; };
 		B4FF21D61D764FEA005C16B8 /* Flappy Bird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flappy Bird.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4FF21D91D764FEA005C16B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4FF21DB1D764FEA005C16B8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -61,21 +43,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B451226C1D76A51300B38780 /* Ressources */ = {
+		B49F144720AB2EB600DE2910 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B4C2963C1D77B88E005F800B /* versionImg.png */,
-				B4C296341D77B208005F800B /* tapHere.png */,
-				B45122751D76EB7500B38780 /* playBTN.png */,
-				B451226D1D76D4A600B38780 /* 04B_19__.TTF */,
-				B45122731D76E6AC00B38780 /* restartBTN.png */,
-				B480F0B81D782763002517D8 /* bg.png */,
-				B480F0B91D782763002517D8 /* flappy1.png */,
-				B480F0BA1D782763002517D8 /* flappy2.png */,
-				B480F0BB1D782763002517D8 /* pipe1.png */,
-				B480F0BC1D782763002517D8 /* pipe2.png */,
+				B49F145120AB2EB600DE2910 /* 04B_19__.TTF */,
 			);
-			name = Ressources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		B4FF21CD1D764FEA005C16B8 = {
@@ -97,12 +70,12 @@
 		B4FF21D81D764FEA005C16B8 /* Flappy Bird */ = {
 			isa = PBXGroup;
 			children = (
+				B49F144720AB2EB600DE2910 /* Resources */,
 				B4FF21D91D764FEA005C16B8 /* AppDelegate.swift */,
 				B4FF21DB1D764FEA005C16B8 /* GameScene.sks */,
 				B4FF21DD1D764FEA005C16B8 /* Actions.sks */,
 				B4FF21DF1D764FEA005C16B8 /* GameScene.swift */,
 				B4FF21E11D764FEA005C16B8 /* GameViewController.swift */,
-				B451226C1D76A51300B38780 /* Ressources */,
 				B4FF21E31D764FEA005C16B8 /* Main.storyboard */,
 				B4FF21E61D764FEA005C16B8 /* Assets.xcassets */,
 				B4FF21E81D764FEA005C16B8 /* LaunchScreen.storyboard */,
@@ -138,12 +111,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = MatthiasHofmann;
 				TargetAttributes = {
 					B4FF21D51D764FEA005C16B8 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 8VB699JS95;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -171,20 +145,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B45122761D76EB7500B38780 /* playBTN.png in Resources */,
-				B451226E1D76D4A600B38780 /* 04B_19__.TTF in Resources */,
-				B480F0BD1D782763002517D8 /* bg.png in Resources */,
-				B480F0BE1D782763002517D8 /* flappy1.png in Resources */,
-				B480F0C11D782763002517D8 /* pipe2.png in Resources */,
 				B4FF21E51D764FEA005C16B8 /* Main.storyboard in Resources */,
 				B4FF21DC1D764FEA005C16B8 /* GameScene.sks in Resources */,
-				B45122741D76E6AC00B38780 /* restartBTN.png in Resources */,
-				B4C296351D77B208005F800B /* tapHere.png in Resources */,
-				B480F0BF1D782763002517D8 /* flappy2.png in Resources */,
+				B49F145B20AB2EB600DE2910 /* 04B_19__.TTF in Resources */,
 				B4FF21E71D764FEA005C16B8 /* Assets.xcassets in Resources */,
-				B480F0C01D782763002517D8 /* pipe1.png in Resources */,
 				B4FF21EA1D764FEA005C16B8 /* LaunchScreen.storyboard in Resources */,
-				B4C2963D1D77B88E005F800B /* versionImg.png in Resources */,
 				B4FF21DE1D764FEA005C16B8 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,15 +198,24 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -264,7 +238,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -283,15 +257,24 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -308,7 +291,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -327,7 +310,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "MatthiasHofmann.Flappy-Bird";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -342,7 +326,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "MatthiasHofmann.Flappy-Bird";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

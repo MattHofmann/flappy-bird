@@ -323,7 +323,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     // Method to create pipes
-    func createPipes() {
+    @objc func createPipes() {
         
         // Add and remove Pipes
         
